@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header */}
-      <header className="bg-white shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -50,7 +50,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 px-4">
+      <section className="pt-32 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Подарочные карты
