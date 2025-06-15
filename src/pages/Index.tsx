@@ -64,6 +64,21 @@ const Index = () => {
             музыку и многое другое в экосистеме Apple.
           </p>
 
+          {/* Main CTA Button */}
+          <div className="mb-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-4 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              onClick={() => {
+                const cardsSection = document.querySelector("#gift-cards");
+                cardsSection?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <Icon name="Gift" size={24} className="mr-3" />
+              Выбрать подарочную карту
+            </Button>
+          </div>
+
           <div className="flex items-center justify-center space-x-8 text-sm text-gray-500">
             <div className="flex items-center">
               <Icon name="Zap" size={16} className="mr-2 text-blue-500" />
@@ -82,7 +97,7 @@ const Index = () => {
       </section>
 
       {/* Gift Cards Grid */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" id="gift-cards">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Выберите номинал
