@@ -43,16 +43,6 @@ const GiftCard = ({
           </div>
         </div>
 
-        {/* Card Preview */}
-        <div className="mb-6 relative">
-          <div className="w-full h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg shadow-inner flex items-center justify-center border">
-            <div className="text-center">
-              <div className="text-xs text-gray-500 mb-1">Apple Gift Card</div>
-              <div className="text-2xl font-bold text-gray-800">{amount}₽</div>
-            </div>
-          </div>
-        </div>
-
         {/* Amount */}
         <div className="mb-4">
           <div className="text-3xl font-bold text-gray-900 mb-1">{amount}₽</div>
